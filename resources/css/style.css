@@ -1,0 +1,274 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+
+}
+body {
+  font-family: Helvetica;
+}
+
+.main {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  width: 960px;
+  height: 2.5rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  height: 1.5rem;
+}
+.header span {
+  padding-left: 1rem;
+}
+
+.detailed {
+  display: flex;
+  padding-right: 2rem;
+
+}
+.detailed li {
+  padding-right: 2rem;
+  list-style-type: none;
+}
+.detrunked {
+  display: none;
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+.slogan {
+  background-color: white;
+  height: 4.2rem;
+  width: 40%;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: 10%;
+  padding: 1.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1240px) {
+  .navigation {
+    margin: 0;
+    width: 100%;
+  }
+  .main {
+    height: 22rem;
+    background-position: center;
+  }
+  .slogan {
+    margin-top: 5rem;
+    margin-right: 5%;
+    margin-left: auto;
+    padding: .75rem 4rem;
+  }
+  .slogan h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .header span {
+    display: none;
+  }
+  .detailed {
+    display: none;
+  }
+  .detrunked {
+    display: block;
+  }
+
+  .main {
+    background-size: cover;
+    height: 17rem;
+    background-position: 20%;
+  }
+  .slogan {
+    width: 100%;
+    height: 1rem;
+    margin: 9rem 0 auto 0;
+    padding: 1rem;
+  }
+  .slogan h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14rem;
+}
+
+.service {
+  height: 8rem;
+  width: 8rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service img {
+  width: 4.5rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.service .paper img {
+  width: 3.5rem;
+  height: auto;
+  margin-bottom: 0 auto;
+}
+
+.service p {
+  text-align: center;
+  max-width: 5rem;
+  margin-bottom: 0;
+}
+
+#broad {
+  max-width: 8rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .services {
+    flex-direction: column;
+    height: 36rem;
+    padding-top: 3.77rem 0;
+  }
+  .service {
+    margin: .77rem auto;
+    justify-content: center;
+  }
+}
+
+.whyhow {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
+  margin-left: 15rem;
+}
+
+.container {
+  width: 35%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: baseline;
+  }
+
+.grid {
+    background-color: cadetblue;
+    width: 10rem;
+    height: 2.8rem;
+    padding-left: 1.25rem;
+  }
+
+.whyhow h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer {
+  background-color: azure;
+  height: 9.5rem;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .whyhow {
+    margin-left: 5rem;
+  }
+  .container {
+    width: 40%;
+  }
+  .footer {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .whyhow {
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .grid {
+    width: 100%;
+    padding: 0;
+  }
+  .whyhow h2 {
+    text-align: center;
+  }
+  .container p {
+    font-size: .77rem;
+    font-family: Helvetica;
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .footer img {
+    padding: 0;
+  }
+  .footer p {
+    display: none;
+  }
+
+}
